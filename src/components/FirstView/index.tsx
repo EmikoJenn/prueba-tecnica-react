@@ -1,7 +1,6 @@
 import IconButton from "@mui/material/IconButton";
-import PersonAddIcon from '@mui/icons-material/PersonAdd';
+import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import styled from "@emotion/styled";
-import {css} from "@emotion/react";
 
 const Container = styled.div`
   width: 50%;
@@ -13,14 +12,22 @@ const Container = styled.div`
   text-align: center;
 `;
 
-export default function FirstView() {
+const FirstView = (): JSX.Element => {
   return (
     <Container>
       <h3>No interviewer has been registered</h3>
       <div>
-        <IconButton color="secondary" size="large" aria-label="add an inreviewer"><PersonAddIcon /></IconButton>
+        <IconButton
+          color="secondary"
+          size="large"
+          aria-label="add an interviewer"
+        >
+          <PersonAddIcon />
+        </IconButton>
         <p>Click here to add</p>
       </div>
     </Container>
-  )
-}
+  );
+};
+
+export default FirstView;

@@ -7,13 +7,14 @@ const StyledHeader = styled.header`
   border-bottom: solid 2px white;
 `;
 
-export default function Header() {
+const Header = (): JSX.Element => {
   return (
     <>
-      
       <StyledHeader>
-       <h2>Interviewers Dashboard</h2> 
+        <h2>Interviewers Dashboard</h2>
       </StyledHeader>
     </>
-  )
-}
+  );
+};
+
+export default Header;
